@@ -7,10 +7,9 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Test</h1> 
+    <h1>Test</h1>
     <h1>Hello world</h1>
-    <p class="desc
-    ">
+    <p class="desc">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium,
       labore? Incidunt <b>sed libero, sunt sit, </b> nostrum nihil totam
       corporis, culpa possimus quo praesentium deserunt accusantium recusandae
@@ -23,25 +22,25 @@
     </ul>
 
     <script>
-        const elH1= document.querySelector("h1"); //querySelector her zmaan ilk elemani verrir
-        console.log(elH1.innerText); //h1 in icindeki elemani verir
+      const elH1 = document.querySelector("h1"); //querySelector her zmaan ilk elemani verrir
+      console.log(elH1.innerText); //h1 in icindeki elemani verir
 
-        elH1.innerText="Hello Javascript"; //propertie dir innertext
-        elH1.innerHTML="Hello <em>Javascript</em>";
+      elH1.innerText = "Hello Javascript"; //propertie dir innertext
+      elH1.innerHTML = "Hello <em>Javascript</em>";
 
-        const elHome=document.querySelector(".menu li:first-child");
-        console.log(elHome);
-        elHome.innerText="Ana Sayfa";
+      const elHome = document.querySelector(".menu li:first-child");
+      console.log(elHome);
+      elHome.innerText = "Ana Sayfa";
 
-        const elements=document.querySelectorAll("h1");
-        console.log(elements);
+      const elements = document.querySelectorAll("h1");
+      console.log(elements);
 
-        const allLi=document.querySelectorAll(".menu li");
-        console.log(allLi);
+      const allLi = document.querySelectorAll(".menu li");
+      console.log(allLi);
 
-        const elDesc=document.querySelector(".desc");
-        console.log(elDesc.innerText);
-        console.log(elDesc.innerHTML);
+      const elDesc = document.querySelector(".desc");
+      console.log(elDesc.innerText);
+      console.log(elDesc.innerHTML);
     </script>
   </body>
 </html>
