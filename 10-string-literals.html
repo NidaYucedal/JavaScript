@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = "Ali";
+      var sehir = "istanbul";
+
+      /* eskiden multi line metin hazılanırdı
+      var kod= ""; //ici bos degisken
+      kod =kod + "x=12"; //koda atama 
+      kod=kod + "y=15";
+      */
+
+      var kod=`
+      x=12;
+      y=15;
+      `;
+
+      console.log("Merhaba " + name + " Nasilsin");
+      console.log(`Merhaba ${name} Nasilsin`); //name ignore et
+
+      console.log(`Merhaba ${name} Nasilsin ${sehir} sehirde havalar nasil`);
+
+      //metinleri daha dinamik birlestirmek icin
+      //string interpolation kullanilir.
+      //back tick altgr+;  es6 ozelligi
+
+
+  
+      let a=3;
+      let b=++a;
+      let c=--a;
+      console.log(a,b,c);
+
+      a+=5;
+      console.log(a);
+
+      const z=3;
+      let k = z++; //-> burada hata alıriz const degeri asrtiralamaz
+      console.log(k);
+      
+
+
+
+
+
+    </script>
+  </body>
+</html>

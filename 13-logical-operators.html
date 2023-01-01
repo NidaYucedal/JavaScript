@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = false;
+      let y = true;
+      let z = true;
+      let m = false;
+      let n = false;
+
+      const compration1 = true && null; //buradan null gelir
+      console.log(compration1);
+
+      const compration2 = y && z && 5; //y true devam eder z de true
+      //bakmaya devam eder 5 bakacak eleman
+      //yok 5 yazdirir
+      console.log(compration2);
+      //&& de false yutan eleman false gorunce gerisine bakmaz
+      //veya da true gorurse gerisine bakmaz
+
+      const compration3 = y && m && z && 5;
+      console.log(compration3); //tek false gordu durdu false verir
+
+      const compration4 = false && null;
+      console.log(compration4); //false
+
+      const compration5 = z || 34;
+      console.log(compration5); //true
+
+      const compration6 = m || x || false || 34;
+      console.log(compration6); //34
+
+      const compration7 = n || 34; //34
+      console.log(compration7);
+
+      const compration8 = n && 34;
+      console.log(compration8); //false
+
+      var s2 = "kuş";
+      var s3 = "kedi";
+      console.log(s2 || s3); //kuş ilk true gordu ve onu yazdirdi
+      console.log(s2 && s3); //false ariyor ilki degil sonuncuyu yazdirir
+
+      s2 = true;
+      s3 = false;
+      console.log(!s2); //false
+      console.log(!s3); //true
+
+      s3 = null;
+      console.log(!s3); //true
+    </script>
+  </body>
+</html>

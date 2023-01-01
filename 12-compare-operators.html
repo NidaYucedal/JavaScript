@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 30;
+      let y = 40;
+      let z = "30";
+
+      const compration1 = x == y; //x y ye esit mi diye sorariz
+      //true veya false doner
+      console.log(compration1);
+
+      const compration2 = x == z;
+      console.log(compration2);
+      //== data tiplerini karsilastirmaz
+
+      const compration3 = x === z;
+      console.log(compration3);
+      // === tipide karsilastirir
+
+      const comp = x < "a"; //kontrol edemedigi yerde false
+      console.log(comp);
+
+      let s2 = true;
+      let s3 = true;
+
+      console.log(s2 && true); //true
+      console.log(s2 && s3); //true
+      console.log(s2 && s3 && false); //false
+
+      s3 = false;
+      console.log(s2 || s3 || false); //veya da bir tane true varsa true
+      console.log(s3 || (s2 && s3)); //false
+
+      s3 = null;
+      console.log(s2 && s3); //null
+      console.log(s2 || s3); //true
+      
+    </script>
+  </body>
+</html>
