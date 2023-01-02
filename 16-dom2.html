@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .red{
+            background-color: rosybrown;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+        .text-center{
+            text-align: center;
+        }
+
+        .text-style{
+            color: rgb(53, 4, 53);
+            text-shadow: 3px 3px 5px rgb(156, 126, 156);
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+    <h1>Bonjour Mademoiselle</h1>
+    <p id="pe1" class="red text-center">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Quas, tempore sed. Inventore blanditiis fugit quo non sunt. 
+        Inventore nulla optio esse deleniti delectus nobis quaerat et possimus ex, id labore?
+    </p>
+
+    <h1 class="name">Come with me</h1>
+    <p class="message"></p>
+  
+
+
+    <script>
+
+
+let pe1=document.querySelector("#pe1"); //class . ile ifade edilir
+console.log(pe1);
+console.log(pe1.classList[1]); //bir elementin sahip oldugu classlari verir
+
+pe1.classList.add("text-style");
+console.log(pe1.classList);
+
+pe1.classList.remove("red");
+
+let isim=document.querySelector('.name').innerText;
+document.querySelector('.message').innerText=`Merhaba ${isim}`;
+document.querySelector('.message').innerHTML=`<b>Merhaba ${isim}</b>`; //bold yapar
+
+    </script>
+</body>
+</html>
