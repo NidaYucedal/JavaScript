@@ -29,7 +29,7 @@
     </style>
   </head>
   <body class="dark">
-    <button onclick="setMode()">Dark</button>
+    <button onclick="setMode()" id="btnMode">Dark</button>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam iusto
       laborum ad repellat fuga corrupti veniam culpa nam? Quam reprehenderit
@@ -38,16 +38,18 @@
     </p>
 
     <script>
-      let mode = "light";
+      let mode = "Light";
 
       function setMode() {
-        if (mode === "light") {
+        document.querySelector("#btnMode").innerHTML=mode;
+        if (mode === "Light") {
           document.querySelector("body").classList.add("dark");
-          mode = "dark";
+          mode = "Dark";
         } else {
           document.querySelector("body").classList.remove("dark");
-          mode = "light";
+          mode = "Light";
         }
+       
       }
     </script>
   </body>
