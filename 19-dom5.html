@@ -16,10 +16,13 @@
 
     <script>
    
+   const lblMessage=document.querySelector("#lblMessage");
+   const txtName=document.querySelector("#txtName");
     
     function sayHello(){
 
-        document.querySelector("#lblMessage").innerHTML =document.querySelector("#txtName").value;
+        lblMessage.innerHTML=txtName.value;
+        //document.querySelector("#lblMessage").innerHTML =document.querySelector("#txtName").value;
     }
 
 
