@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Create a canvas element and append it to the body
+const canvas = document.createElement('canvas');
+document.body.appendChild(canvas);
+
+// Set the canvas dimensions to the window size
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Get the canvas context
+const ctx = canvas.getContext('2d');
+
+// Set the neon color and line width
+ctx.strokeStyle = '#F5D300';
+ctx.lineWidth = 5;
+
+// Create a path for the heart shape
+ctx.beginPath();
+ctx.moveTo(75, 40);
+ctx.bezierCurveTo(75, 37, 70, 25, 50, 25);
+ctx.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+ctx.bezierCurveTo(20, 80, 40, 102, 75, 120);
+ctx.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+ctx.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+ctx.bezierCurveTo(85, 25, 75, 37, 75, 40);
+
+// Stroke the heart shape with the neon color
+ctx.stroke();
+
+    </script>
+</body>
+</html>
