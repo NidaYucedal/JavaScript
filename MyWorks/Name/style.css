@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  
+    font-family: "Courier New", Courier, monospace;
+  
+    display: grid;
+  
+    place-items: center;
+  
+    line-height: 1;
+  
+    min-height: 100vh;
+  
+    background: #03051f;
+  }
+  
+  h1 {
+    font-weight: 900;
+  
+    font-size: 190px;
+  
+    font-style: italic;
+  
+    letter-spacing: 0.04em;
+  
+    margin: 0;
+  
+    color: deeppink;
+  
+    -webkit-text-stroke: 0.04em;
+  
+    -webkit-text-stroke-color: black;
+  
+    transform: skew(-10deg);
+  
+    display: flex;
+  }
+  
+  h1 span {
+    --t: 0.17em;
+  
+    display: block;
+  
+    text-shadow: 0 0 darkorchid, 0 0 orange, 0 0 deeppink, 0 0 darkorchid,
+      0 0 turquoise;
+  
+    animation: animate 1800ms forwards var(--delay, 0ms);
+  
+    transform: translate3d(var(--t), var(--t), 0);
+  }
+  
+  h1 span:nth-child(2) {
+    --delay: 300ms;
+  }
+  
+  h1 span:nth-child(3) {
+    --delay: 600ms;
+  }
+  
+  h1 span:nth-child(4) {
+    --delay: 900ms;
+  }
+  
+  h1 span:nth-child(5) {
+    --delay: 1200ms;
+  }
+  
+  h1 span:nth-child(6) {
+    --delay: 1500ms;
+  }
+  
+  @keyframes animate {
+    to {
+      --t: 0.17em;
+  
+      text-shadow: 0.05em 0.05em darkorchid, 0.08em 0.08em orange,
+        0.11em 0.11em deeppink, 0.14em 0.14em darkorchid, 0.17em 0.17em #3ad59f;
+    }
+  }
+  
+  #insta-link {
+    background-color: #ffffff;
+  
+    color: #0f1730;
+  
+    position: absolute;
+  
+    display: block;
+  
+    margin: auto;
+  
+    left: 0;
+  
+    right: 0;
+  
+    bottom: 30px;
+  
+    padding: 15px 0;
+  
+    border-radius: 5px;
+  
+    width: 320px;
+  
+    text-align: center;
+  
+    font-family: "Poppins", sans-serif;
+  
+    font-size: 20px;
+  
+    text-decoration: none;
+  }
+  
