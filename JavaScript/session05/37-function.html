@@ -32,10 +32,11 @@
       }
 
 
-      function calculateFactoriel() {
-        const elNum = document.querySelector("#txtNumber");
-        let num = isNaN(elNum.value + 1) ? 0 : elNum.value;
-        num = num == 0 ? 1 : num;
+      function calculateFactoriel(val) {
+        
+        let num = isNaN(val + 1) ? 0 : Number(val);
+        num = num === 0 ? 1 : num;
+
         let factoriel = 1;
 
         do {
@@ -43,11 +44,8 @@
           num--;
         } while (num > 1);
 
-        document.querySelector(
-          "#result"
-        ).innerHTML = `${elNum.value}! =${factoriel}`;
-
-
+       
+        return factoriel;
         
       }
     </script>
