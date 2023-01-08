@@ -8,7 +8,7 @@
   </head>
   <body>
     <input type="text" id="txtNumber" />
-    <button onclick="handleFactoriel()">Calculate</button>
+    <button onclick="handleCalculateClick()">Calculate</button>
     <h4 id="result"></h4>
 
     <script>
@@ -28,6 +28,7 @@
       //butona tikladigimizda birsey cagirmak lazim
       //dry proglamlama prensibi
       //bir class bir modul sadece birsey yapsin
+      //generic bir fonksiyon
       function calculateFactoriel(val) {
         let num = isNaN(val + 1) ? 0 : Number(val);
         num = num === 0 ? 1 : num;
@@ -41,6 +42,8 @@
 
         return factoriel;
       }
+
+      alert(calculateFactoriel(10));
     </script>
   </body>
 </html>
