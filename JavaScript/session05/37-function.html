@@ -12,16 +12,17 @@
     <h4 id="result"></h4>
 
     <script>
-        //butona tiklandiginde calisan event
-        //calculate butonuna bagımli bir foknksiyon
-        //direk bagimli
+      //butona tiklandiginde calisan event
+      //calculate butonuna bagımli bir foknksiyon
+      //direk bagimli
       function handleCalculateClick() {
-        const elNum = document.querySelector("#txtNumber");
-       
+        const num = document.querySelector("#txtNumber").value;
 
-        document.querySelector(
-          "#result"
-        ).innerHTML = `${elNum.value}! =${factoriel}`;
+        const result = calculateFactoriel(num);
+        //num u calculatefac gonderdim
+        //asagida islemi yapip result doner
+
+        document.querySelector("#result").innerHTML = `${num}! =${result}`;
       }
 
       //butona tikladigimizda birsey cagirmak lazim
