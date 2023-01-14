@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="txtYear" placeholder="Type your birth year" />
+    <button onclick="onCalculateClick()">Calculate</button>
+    <h4 id="result"></h4>
+
+    <script>
+        //z global
+        //global scope her yerden erişelebilir
+
+        let z=15;
+
+
+      const test1 = () => {
+        let x = 40;
+        //function scope sadece fonction icinden ulasilabilir
+        console.log(`x degiskeninin degeri: ${x}`);
+        console.log(`z degiskeninin degeri: ${z}`);
+      };
+
+      //hata var
+      //console.log(`x degiskeninin degeri: ${x}`);
+      console.log(`z degiskeninin degeri: ${z}`);
+      test1();
+    </script>
+  </body>
+</html>
