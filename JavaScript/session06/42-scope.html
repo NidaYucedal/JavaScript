@@ -12,11 +12,11 @@
     <h4 id="result"></h4>
 
     <script>
-        //z global
-        //global scope her yerden erişelebilir
+      //z global
+      //global scope her yerden erişelebilir
 
-        let z=15;
-
+      let z = 15; //ilk calisir
+      var m = 12;
 
       const test1 = () => {
         let x = 40;
@@ -25,10 +25,32 @@
         console.log(`z degiskeninin degeri: ${z}`);
       };
 
+      const test2 = () => {
+        let x = 33;
+        let z = 11;
+        var m = 23;
+        g = 33; //js tanimlanmamis degiskenleri global kabul eder
+        if (x > 20) {
+          let y = 15;
+          y += 10;
+        }
+
+        console.log(z);
+        console.log(m);
+      };
+
+      const test3 = () => {
+        console.log(z);
+        console.log(m);
+        console.log(g);
+      };
+
       //hata var
       //console.log(`x degiskeninin degeri: ${x}`);
-      console.log(`z degiskeninin degeri: ${z}`);
+      //console.log(`z degiskeninin degeri: ${z}`);
       test1();
+      test2();
+      test3();
     </script>
   </body>
 </html>
