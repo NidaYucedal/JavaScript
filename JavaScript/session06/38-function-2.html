@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" id="txtYear" placeholder="Type your birth year" />
+    <input type="number" id="txtYear" placeholder="Type your birth year" />
     <button onclick="onCalculateClick()">Calculate</button>
     <h4 id="result"></h4>
 
@@ -33,6 +33,8 @@
       console.log(getAge(1980));
       console.log(getAge("merhaba"));
       console.log(getAge());
+      console.log(getAge(""));
+      console.log(getAge(2100));
     </script>
   </body>
 </html>
