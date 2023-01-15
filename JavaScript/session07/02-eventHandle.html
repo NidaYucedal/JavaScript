@@ -22,18 +22,17 @@
         alert("2.butona tiklandi");
       }
 
-      document.querySelector("#btn2").onclick = onclick2;
+      document.querySelector("#btn2").onclick = onClick2;
 
       //kullanicinin butona tiklamasi bir event dir
       //kullanici click yaptiginda onClick calisir
       //event i yakalayan event handler dir
 
       //3. yontem
-      function onClick3() {
-        alert("3.butona tiklandi");
-      }
 
-      document.querySelector("#btn2").onclick = onclick2;
+      document.querySelector("#btn3").onclick = function () {
+        alert("3.butona tiklandi");
+      };
     </script>
   </body>
 </html>
