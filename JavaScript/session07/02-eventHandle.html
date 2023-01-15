@@ -10,6 +10,7 @@
     <button onclick="onClick1()">Click 1</button>
     <button id="btn2">Click 2</button>
     <button id="btn3">Click 3</button>
+    <button id="btn4">Click 4</button>
 
     <script>
       //1. yontem
@@ -30,12 +31,18 @@
 
       //3. yontem
 
-      document.querySelector("#btn3").onclick = function () {  //onclick event kistener
-        alert("3.butona tiklandi");               //function event handler
+      document.querySelector("#btn3").onclick = function () {
+        //onclick event kistener
+        alert("3.butona tiklandi"); //function event handler
+      };
+
+      //4. yontem
+      document.querySelector("#btn4").onclick = () => {
+        alert("4.butona tiklandi");
       };
 
 
-
+      
     </script>
   </body>
 </html>
