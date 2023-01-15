@@ -27,9 +27,20 @@
       console.log(car);
       console.log(typeof car);
       console.log(car.model);
+      console.log(car.driver.name);
       car.age = 2022;
       console.log(car.age);
-      
+
+      if (bus) {
+        console.log("test1");
+      } else {
+        console.log("test2");
+      }
+
+      //Bir object in icinin dolu ulıp olmadigi nasil anlasilir
+
+      console.log(Object.keys(bus).length);
+      console.log(Object.keys(car).length);
     </script>
   </body>
 </html>
