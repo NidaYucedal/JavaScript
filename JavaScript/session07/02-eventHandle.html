@@ -9,21 +9,31 @@
   <body>
     <button onclick="onClick1()">Click 1</button>
     <button id="btn2">Click 2</button>
+    <button id="btn3">Click 3</button>
 
     <script>
+      //1. yontem
       function onClick1() {
         alert("1.butona tiklandi");
       }
+
+      //2. yontem
+      function onClick2() {
+        alert("2.butona tiklandi");
+      }
+
+      document.querySelector("#btn2").onclick = onclick2;
 
       //kullanicinin butona tiklamasi bir event dir
       //kullanici click yaptiginda onClick calisir
       //event i yakalayan event handler dir
 
-      function onClick2() {
-        alert("2.butona tiklandi");
+      //3. yontem
+      function onClick3() {
+        alert("3.butona tiklandi");
       }
 
-      document.querySelector("#btn2").onclick2;
+      document.querySelector("#btn2").onclick = onclick2;
     </script>
   </body>
 </html>
