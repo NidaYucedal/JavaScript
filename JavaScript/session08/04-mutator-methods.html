@@ -14,8 +14,12 @@
       fruits.pop(); //son elemani sildi
       console.log(fruits);
       fruits.push('Ananas'); //sona ekler
-      console.log(fruits);
-      
+      console.log(fruits); //['elma', 'armut', 'muz', 'Ananas']
+      fruits.shift(); //bastakini siler
+      console.log(fruits); //['armut', 'muz', 'Ananas']
+      fruits.unshift('cilek'); //basa ekleme yapar
+      console.log(fruits); // ['cilek', 'armut', 'muz', 'Ananas']
+
     </script>
   </body>
 </html>
