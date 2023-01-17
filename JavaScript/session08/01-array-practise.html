@@ -13,13 +13,19 @@
       const arr = [12, 45, 6, 23, 676, 2, 1];
       document.querySelector("#btnFind").addEventListener("click", () => {
         const maxNumber = getMaxNumber(arr);
+        alert(`En büyük sayi ${maxNumber}`);
       });
 
       //generic function
       //nfn
-      const getMaxNumber = (a) => {};
+      const getMaxNumber = (a) => {
+        if (!a && typeof a !== "object" && a.length <= 0) return;
 
-      
+        
+        return 50;
+        //return fonksiyonlarda cagirildigi yere
+        //return ettigimiz degeri aynen gonderiyor
+      };
     </script>
   </body>
 </html>
