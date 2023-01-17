@@ -21,9 +21,9 @@
       //slice => bir dizi elemanlarini belirtilen baslangiiz,
       //ve bitis index ine gore kopyasini olusturarak dondurur
 
-      //dizinin halini bozmaz 
-      
-      const animals = ["fil", "kus", "deve", "fare", "kedi"];
+      //dizinin halini bozmaz
+
+      const animals = ["fil", "kus", "deve", "kus", "fare", "kedi", "kus"];
 
       console.log(animals.includes("fil")); //true buyuk kucuk harf duyarlşi
       console.log(animals.join()); //fil,kus,deve,fare,kedi dizi degil artik
@@ -31,10 +31,11 @@
       console.log(animals.join("-")); //fil-kus-deve-fare-kedi
 
       console.log(animals.slice(2)); //['deve', 'fare', 'kedi'] //indexi ikiden itibaren verdi
-      console.log(animals.slice(2,4)); //2 den basla 4 ü alma //['deve', 'fare']
+      console.log(animals.slice(2, 4)); //2 den basla 4 ü alma //['deve', 'fare']
       console.log(animals.toString()); //fil,kus,deve,fare,kedi
-      
 
+      console.log(animals.indexOf("kus")); //1
+      
     </script>
   </body>
 </html>
