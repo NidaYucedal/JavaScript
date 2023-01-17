@@ -32,6 +32,20 @@
       console.log(fruits); //['armut', 'muz', 'Ananas']
       fruits.unshift('cilek'); //basa ekleme yapar
       console.log(fruits); // ['cilek', 'armut', 'muz', 'Ananas']
+      fruits.reverse(); //ters cevirir
+      console.log(fruits); //['Ananas', 'muz', 'armut', 'cilek']
+      fruits.sort(); //siralar
+      console.log(fruits); //['Ananas', 'armut', 'cilek', 'muz']
+      fruits.splice(1,0,"kiraz"); //index no 1 armut un onune ekleme yap
+      console.log(fruits); // ['Ananas', 'kiraz', 'armut', 'cilek', 'muz'] 
+      fruits.splice(2,2); //2. elemanda nitibaren iki eleman sil
+      console.log(fruits); // ['Ananas', 'kiraz', 'muz']
+      fruits.splice(1,1,"ceviz","findik"); //1. elemandan itibaren bir tane sil bunlari ekle
+      console.log(fruits); // ['Ananas', 'ceviz', 'findik', 'muz']
+      fruits.splice(0,fruits.length); //hepsini sil
+      console.log(fruits);
+   
+
 
     </script>
   </body>
