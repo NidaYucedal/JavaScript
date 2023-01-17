@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Access Methods
+      //Concat => dizi ile bir başka diziyi veya degeri
+      //birlestirerek yeni bir dizi dondurur
+      //includes => dizinin belirtilen elemani icerip icermedigine bakar
+      //true false doner
+      //indexOf => belirtilen elemanin index numarasini doner
+      //lastIndexOf => belirtilen elemanin dizide goruldugu en son index no doner
+      //join => bir dizi icerisinde yer alan butun elemanlari birlestirerek string
+      //ifade olarak doner
+      //toString => dizinin icerisindeki elemanlari tek bir string olarak dondurur
+      //slice => bir dizi elemanlarini belirtilen baslangiiz,
+      //ve bitis index ine gore kopyasini olusturarak dondurur
+
+      //dizinin halini bozmaz 
+      
+      const animals = ["fil", "kus", "deve", "fare", "kedi"];
+
+      console.log(animals.includes("fil")); //true buyuk kucuk harf duyarlşi
+      console.log(animals.join()); //fil,kus,deve,fare,kedi dizi degil artik
+      console.log(animals.join("")); //filkusdevefarekedi
+      console.log(animals.join("-")); //fil-kus-deve-fare-kedi
+
+      console.log(animals.slice(2)); //['deve', 'fare', 'kedi'] //indexi ikiden itibaren verdi
+      console.log(animals.slice(2,4)); //2 den basla 4 ü alma //['deve', 'fare']
+      console.log(animals.toString()); //fil,kus,deve,fare,kedi
+      
+
+    </script>
+  </body>
+</html>
