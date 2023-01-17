@@ -21,12 +21,15 @@
       const getMaxNumber = (a) => {
         if (!a && typeof a !== "object" && a.length <= 0) return;
 
-        let maxNum = a[0];
+        let maxNum = a[0]; //icinde 12 var suan
         for (let i = 1; i < a.length; i++) {
-          if (maxNum < a[i]) maxNum = a[i];
+          //i dongu icinde devam edecek
+          if (maxNum < a[i]) maxNum = a[i]; //12, 45 den kucuk mu 45 i al
 
+          //a[4] e kadar dongu devam eder 676 alir
+          //2 yi ve 1 i de kontrol eder en buyuk sayiyi aldi
         }
-        return 50;
+        return maxNum;
         //return fonksiyonlarda cagirildigi yere
         //return ettigimiz degeri aynen gonderiyor
       };
