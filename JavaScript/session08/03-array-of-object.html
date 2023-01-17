@@ -7,7 +7,6 @@
     <title>Document</title>
   </head>
   <body>
-    
     <script>
       const cars = [
         {
@@ -41,7 +40,12 @@
       ];
 
       console.log(cars[1].model);
-     
+
+      for (let i = 0; i < cars.length; i++) {
+        if (cars[i].id === 6) {
+          console.log(cars[i].model);
+        }
+      }
     </script>
   </body>
 </html>
