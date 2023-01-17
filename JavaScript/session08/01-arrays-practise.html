@@ -14,7 +14,7 @@
 
       document.querySelector("#btnSetPrices").addEventListener("click", () => {
         for (let i = 0; i < prices.length; i++) {
-          prices[i] *= 1.2;
+          prices[i] = (prices[i] * 1.2).toFixed(2); //iki hane ver
         }
 
         console.log(prices);
