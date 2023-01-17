@@ -27,6 +27,41 @@
     <script>
       const cities = ["ankara", "izmir", "istanbul", "sinop"];
 
+      document.querySelector("#btnSort").addEventListener("click", () => {
+        cities.sort();
+        loadlist();
+      });
+
+      document.querySelector("#btnReverse").addEventListener("click", () => {
+        cities.reverse();
+        loadlist();
+      });
+
+      document
+        .querySelector("#btnRemoveFirst")
+        .addEventListener("click", () => {
+          cities.shift();
+          loadlist();
+        });
+
+      document.querySelector("#btnRemoveLast").addEventListener("click", () => {
+        cities.pop();
+        loadlist();
+      });
+
+      document.querySelector("#btnRemoveAll").addEventListener("click", () => {
+        cities.splice(0, cities.length);
+        loadlist();
+      });
+
+      document.querySelector("#btnAddCity").addEventListener("click", () => {
+        const city = document.querySelector("#txtCity").value;
+
+        if (!city) return;
+        cities.push(city);
+        loadlist();
+      });
+
       const loadlist = () => {
         let html = "";
         for (let i = 0; i < cities.length; i++) {
