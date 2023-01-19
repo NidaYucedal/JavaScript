@@ -10,13 +10,17 @@
     <script>
       const animals = ["fil", "kus", "deve", "kus", "fare", "kedi", "kus"];
 
+      //for In dongusu
       //dizide donuyor her bir elemanin index nosunu veriyor
       for (let i in animals) {
         console.log(i); //index verir
         //console.log(i, animals[i]); //0 fil ....
       }
 
-      
+      //for dongusu
+      for (let i = 0; i < animals.length; i++) {
+        console.log(i, animals[i]);
+      }
     </script>
   </body>
 </html>
