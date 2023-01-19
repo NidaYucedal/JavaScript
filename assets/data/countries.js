@@ -28,7 +28,7 @@ export const countries=[
     
                 },
                 "pap":{
-                    "official":"Aruba",
+                    "official":"Aru",
                     "common":"Aruba"
                 },
             },
@@ -41,12 +41,12 @@ export const countries=[
                 "official":"Aruba",
                 "native":{
                     "nld":{
-                        "official":"Aruba",
+                        "official":"Arub",
                         "common":"Aruba",
         
                     },
                     "pap":{
-                        "official":"Aruba",
+                        "official":"Arub",
                         "common":"Aruba"
                     },
                 },
@@ -65,7 +65,7 @@ export const countries=[
             
                         },
                         "pap":{
-                            "official":"Aruba",
+                            "official":"Aru",
                             "common":"Aruba"
                         },
                     },
