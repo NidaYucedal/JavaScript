@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["fil", "kus", "deve", "kus", "fare", "kedi", "kus"];
+
+      //for Of dongusu
+      //her donuste dizideki bir elemani yazdirir
+      for (let animal of animals) {
+        console.log(animal);
+      }
+
+      for (let [animal, index] of animals.entries()) {
+        console.log(index ,animal); //index no ile birlikte verir
+      }
+    </script>
+  </body>
+</html>
