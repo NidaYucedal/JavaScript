@@ -31,7 +31,8 @@
       const totalSalary = salaries
         .filter((salary) => salary < 3000) //uc binden kucukleri filtreledik yeni bir dizi olustu
         .map((salary) => salary * 1.1) //bu dizinin her bir maasini al 1.1 ile carp
-        .reduce((total, salary) => total + salary);  //zam yapilmis elemanlari toplar
+        .reduce((total, salary) => total + salary); //zam yapilmis elemanlari toplar
+
       console.log(totalSalary);
     </script>
   </body>
