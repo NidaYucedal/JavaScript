@@ -1,4 +1,4 @@
-export const data =[
+export const students =[
     {id:1,name:"Ayse",puan:80},
     {id:2,name:"Veli",puan:56},
     {id:3,name:"Fatma",puan:95},
