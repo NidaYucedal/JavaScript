@@ -22,12 +22,14 @@
     </div>
 
     <script>
-      document.querySelector("#lnk").addEventListener("click",(e)=>{
-
+      document.querySelector("#lnk").addEventListener("click", (e) => {
         e.preventDefault(); //engelledi google gitmeden event listeners devreye giriyor
 
-        console.log(e.target.closest("ul"));
+        e.target.closest(".menu").querySelector(".desc").innerHtml =
+          "Hello world";
       });
+
+      console.log(document.querySelector(".menu ul").children);
 
       //closest => en yakin elemani secer, yukari dogru calistirir
     </script>
