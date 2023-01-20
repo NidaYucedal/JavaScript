@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="title">The weather is <span style="display:none">so</span> hot</h2>
+    <script>
+      const title = document.querySelector("#title");
+
+      console.log(title.innerHTML); //bir elemanin icindeki HTML i getirir veya icine metin yerlestirir
+      console.log(title.innerText); //metni getirir veya icine metin yerklestirir
+      console.log(title.textContent); //innerText ile aynidir 
+      //tek farki stil ozelliklerinden dolayi gizlenmis textleri de getirir
+
+      //classList
+      //add("class") => classList e bir class ekler
+      //remove("class") => classList den bir class siler
+      //toggle("class") => classList de yoksa class ı ekler varsa siler
+      //contains("class") 
+
+    </script>
+  </body>
+</html>
