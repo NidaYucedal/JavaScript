@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
+      //Every
+      //mevcut bir dizi icinde tum elemanlarin istenilen
+      //kriteri saglayip saglamadigini dondurur.
+      //sagliyorsa true,degilse false doner.
 
+      //Some
+      //mevcut bir dizi icinde en az bir elemanin istenilen
+      //kriteri saglayip saglamadigini dondurur.true,false
 
-//Every
-//mevcut bir dizi icinde tum elemanlarin istenilen
-//kriteri saglayip saglamadigini dondurur.
-//sagliyorsa true,degilse false doner.
+      const nums = [123, 45, 23, 12, 66, 23];
 
-//Some
-//mevcut bir dizi icinde en az bir elemanin istenilen
-//kriteri saglayip saglamadigini dondurur.true,false
+      console.log(nums.every((num) => num > 0));
+      //true doner every tum elemanlari gezer num a atar hepsi buyuk true doner
+      //ama iclrinden bi tanesi kucuk olsa false doner
 
-
+      if (nums.every((num) => num > 0)) {
+        alert("Butun sayilar pozitif"); //true ise gosterir
+      }
     </script>
-</body>
+  </body>
 </html>
