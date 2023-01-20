@@ -18,6 +18,9 @@
         <li><a href="http://">Link1</a></li>
         <li><a href="http://google.com" id="lnk">Link2</a></li>
         <li><a href="http://">Link3</a></li>
+        <li><a href="http://">Link4</a></li>
+        <li><a href="http://">Link5</a></li>
+        <li><a href="http://">Link6</a></li>
       </ul>
     </div>
 
@@ -30,6 +33,10 @@
       });
 
       console.log(document.querySelector(".menu ul").children);
+      console.log(document.querySelector("#lnk").parentElement.parentElement);
+      console.log(
+        document.querySelector("#lnk").parentElement.nextElementSibling
+      );
 
       //closest => en yakin elemani secer, yukari dogru calistirir
     </script>
