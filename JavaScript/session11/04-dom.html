@@ -7,25 +7,39 @@
     <title>Document</title>
 
     <style>
-        .red{
-            background-color: bisque;
-        }
+      .red {
+        background-color: bisque;
+      }
 
-        .blue{
-            background-color: burlywood;
-        }
-
+      .blue {
+        background-color: burlywood;
+      }
     </style>
   </head>
   <body>
     <h2 id="title">The weather is so hot</h2>
     <button id="btn1">Add</button>
-    <button id="btn2">Remove</button> 
+    <button id="btn2">Remove</button>
     <button id="btn3">Toggle</button>
     <button id="btn4">Replace</button>
     <script>
-      
+      const title = document.querySelector("#title");
 
+      document.querySelector("#btn1").addEventListener("click", () => {
+        title.classList.add("blue");
+      });
+
+      document.querySelector("#bt2").addEventListener("click", () => {
+        title.classList.remove("blue");
+      });
+
+      document.querySelector("#btn3").addEventListener("click", () => {
+        title.classList.toggle("blue");
+      });
+
+      document.querySelector("#btn4").addEventListener("click", () => {
+        title.classList.replace("blue", "red");
+      });
     </script>
   </body>
 </html>
