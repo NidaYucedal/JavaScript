@@ -17,7 +17,7 @@
       //mevcut bir dizi icinde en az bir elemanin istenilen
       //kriteri saglayip saglamadigini dondurur.true,false
 
-      const nums = [123, 45, 23, 12, 66, 23];
+      const nums = [123, 45, 23, 12, 66, 23, -2];
 
       console.log(nums.every((num) => num > 0));
       //true doner every tum elemanlari gezer num a atar hepsi buyuk true doner
@@ -25,6 +25,10 @@
 
       if (nums.every((num) => num > 0)) {
         alert("Butun sayilar pozitif"); //true ise gosterir
+      }
+
+      if (nums.some((num) => num < 0)) {
+        alert("En az bir tane negatif sayi var"); //true ise gosterir
       }
     </script>
   </body>
