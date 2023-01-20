@@ -28,7 +28,10 @@
       //reduce example
       const salaries = [2000, 2500, 5500, 10000, 1000, 1500];
 
-      const totalSalary = salaries.filter((salary) => salary < 3000);
+      const totalSalary = salaries
+        .filter((salary) => salary < 3000) //uc binden kucukleri filtreledim
+        .map((salary) => salary * 1.1) //her bir maasi al 1.1 ile carp
+        .reduce((total, salary) => total + salary);  //
       console.log(totalSalary);
     </script>
   </body>
