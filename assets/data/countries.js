@@ -13,6 +13,7 @@ export const countries=[
                 "official":"Aruba",
                 "common":"Aruba"
             },
+            area:123445,
         },
     },
     },
@@ -31,6 +32,7 @@ export const countries=[
                     "official":"Aru",
                     "common":"Aruba"
                 },
+                area:123445,
             },
         },
         },
@@ -49,6 +51,11 @@ export const countries=[
                         "official":"Arub",
                         "common":"Aruba"
                     },
+                    languages:{
+                        grn:"eng",
+                        spa: "spa",
+                    },
+                    area:123445,
                 },
             },
             },
@@ -68,6 +75,7 @@ export const countries=[
                             "official":"Aru",
                             "common":"Aruba"
                         },
+                        area:123445,
                     },
                 },
                 },];

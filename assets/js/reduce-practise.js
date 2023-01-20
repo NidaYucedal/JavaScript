@@ -11,6 +11,9 @@ const loadCountries = () => {
 
 
     document.querySelector("#ddlCountries").innerHTML=options;
+
+    document.querySelector("#area"). innerHTML = countries.
+    reduce ((totalArea , country ) => totalArea + country.area , 0 );
 }
 
 loadCountries();
