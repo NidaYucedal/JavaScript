@@ -22,6 +22,12 @@ const loadStudents = () => {
     const rows = document.querySelectorAll("#tblStudents tbody tr");
 
 
-    
+    for(let row of rows){
+        const point=row.querySelector("td:nth-child(3)").innerText;
+        if(point<50){
+            row.classList.add("table-danger")
+        }
+    }
  }
  loadStudents();
+ setStudentBg();
