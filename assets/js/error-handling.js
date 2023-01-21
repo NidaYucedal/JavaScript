@@ -4,10 +4,9 @@ document.querySelector("#frmLogin").addEventListener("submit", () => {
 //kullanicidan bilgi alirken veya bir API dan bilgi
 //cekerken kullanilir
       
+try {
        const email=document.querySelector("#email").value;
        const password=document.querySelector("#password").value;
-
-       try {
 
        if(!isEmail(email)) throw "Lutfen gecerli bir eposta giriniz";
 
@@ -15,10 +14,7 @@ document.querySelector("#frmLogin").addEventListener("submit", () => {
 
        e.target.submit();
 
-       }
-       catch (error)
-     { alert(error);
-       }
+       } catch (error) { alert(error);}
 
 });
 
