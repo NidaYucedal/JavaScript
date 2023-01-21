@@ -29,8 +29,6 @@ const isEmail = (email) => {
 
     const regex = /\S+@\S+\.\S{2,5}$/;
 
-
-
     return regex.test(email);
 
  };
