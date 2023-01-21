@@ -27,6 +27,10 @@ const isEmail = (email) => {
 
     //email kontrol islemleri
 
-    return true;
+    const regex = /\S+@\S+\.\S{2,5}$/;
+
+
+
+    return regex.test(email);
 
  };
