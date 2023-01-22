@@ -7,8 +7,14 @@ const elSecond = document.querySelector("#clock li:nth-child(2)");
 const tick = () => { 
 
     const dateTime = new Date();
-    elHour.innerText = dateTime.getHours();
-    elMinute.innerText = dateTime.getMinutes();
+    let hour = dateTime.getHours();
+    let minute = dateTime.getMinutes();
+
+    hour = String(hour).length == 1 ? "0" + hour : hour;
+    minute = String(minute).length == 1 ? "0" + minute : minute ;
+
+    elHour.innerText= hour;
+    elMinute.innerText = minute;
 
     elSecond.classList.toggle("hidden");
 
