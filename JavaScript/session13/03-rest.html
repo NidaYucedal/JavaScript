@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sum = (...nums) => {  //gelen tum parametreleri num adli dizi icine alacaktir
+        return nums.reduce((total, num) => total + num, 0);
+      };
+
+      console.log(sum(5, 7, 12, 124));
+      console.log(sum(5, 7, 12));
+      console.log(sum(3, 56, 432, 5, 7, 12, 124));
+
+      // console.log(sum([12, 56, 23, 12, 56, 76]));
+
+      //rest ve spread operatorleri 3 nokta ile ifade
+      //edilir ancak birbirinden farklidir
+      //Rest => farkli degiskenlerden gelen verileri bir dizi icine toplar
+      //Spread => dizi veya object icindeki verileri ayrı ayrı degiskenlere acar
+    </script>
+  </body>
+</html>
