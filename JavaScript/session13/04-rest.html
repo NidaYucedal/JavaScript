@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getAverage = (firstName, lastName, ...points) => {
+        const avg = points.reduce((total, p) => total + p, 0) / points.length;
+        
+
+        return `${firstName} ${lastName} isimli ogrencilerin ortalamsi ${avg}`;
+      };
+
+      console.log(getAverage("ali", "Gel", 12, 67, 89));
+      console.log(getAverage("ayse", "Gel", 12, 89));
+      console.log(getAverage("veli", "Gel", 89));
+      console.log(getAverage("baris", "Gel"));
+      console.log(getAverage("ali", "Gel", 12, 67, 89, 22, 56));
+    </script>
+  </body>
+</html>
