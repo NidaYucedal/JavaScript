@@ -10,12 +10,14 @@ const tick = () => {
     elHour.innerText = dateTime.getHours();
     elMinute.innerText = dateTime.getMinutes();
 
-    //elSecond.classList.toggle("hidden");
+    elSecond.classList.toggle("hidden");
 
-    elSecond.style.opacity =
+ /*   elSecond.style.opacity =
     elSecond.style.opacity == 1
      ? (elSecond.style.opacity = 0) 
      : (elSecond.style.opacity = 1);
+
+*/
 
  };
 
