@@ -1,4 +1,4 @@
-document.querySelector("#txtSearch").addEventListener("click",(e)=>{
+document.querySelector("#txtSearch").addEventListener("input",(e)=>{
 
     const query=e.target.value;
     if(!query) return;
@@ -11,28 +11,31 @@ document.querySelector("#txtSearch").addEventListener("click",(e)=>{
 
        let strHtml="";
         data.forEach((item)=>{
-            console.log(item);
-
-            strHtml += `
-            <div class="col">
-            <div class="card">
-              <img src="${item.show.image.medium}" class="card-img-top" alt="${item.show.name}">
-              <div class="card-body">
-                <h5 class="card-title">${item.show.name}</h5>
-                <p class="card-text">${item.show.genres[0]}</p>
-              </div>
-            </div>
-          </div>`
+            strHtml +=  createMovieHtml(item);
+           
      })
 
-     const elTvShows=document.querySelector("#tvShows").innerHTML = strHtml;
+      document.querySelector("#tvShows").innerHTML = strHtml;
 
     });
    
-        
-   
-
+    
     //fetch ile endpointe baglandik
     //promise yapisi ile baglanti kuruyoruz (soz veriyorum bu datayi getircem)
     //   
 });
+
+
+const createMovieHtml= (item) => {
+   return `
+    <div class="col">
+    <div class="card">
+      <img src="${item.show.image.medium}" class="card-img-top" alt="${item.show.name}">
+      <div class="card-body">
+        <h5 class="card-title">${item.show.name}</h5>
+        <p class="card-text">${item.show.genres[0]}</p>
+      </div>
+    </div>
+  </div>`;
+
+};
