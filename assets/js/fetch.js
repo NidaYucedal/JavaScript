@@ -12,5 +12,7 @@ document.querySelector("#txtSearch").addEventListener("click",(e)=>{
         console.log(data)
     });
 
-   
+    //fetch ile endpointe baglandik
+    //promise yapisi ile baglanti kuruyoruz (soz veriyorum bu datayi getircem)
+    //   
 });
