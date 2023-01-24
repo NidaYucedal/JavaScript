@@ -23,9 +23,16 @@
       const { firstName, lastName } = person;
 
       //person nesnesi ivindeki ali
-      //ve gel degerlerini ayri ayri firstname 
+      //ve gel degerlerini ayri ayri firstname
       //ve lastname degiskenlerine aktardi
       console.log(firstName, lastName);
+
+      const sayHello = (p) => {
+        //const { firstName, lastName } = p;
+        console.log(`Hello ${p.firstName} ${p.lastName}`);
+      };
+
+      sayHello(person);
     </script>
   </body>
 </html>
