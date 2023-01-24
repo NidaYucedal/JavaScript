@@ -1,12 +1,12 @@
 const sSortAsc=(arr)=>{
 
-    return [...arr.sort((a,b) => a<b ? -1 : 1)];
+    return [...arr.sort((a,b) => a.localeCompare(b))];
 
 };
 
 const sSortDesc=(arr)=>{
 
-    return [...arr.sort((a,b) => b < a ? -1 : 1)];
+    return [...arr.sort((a,b) => b.localeCompare(a))];
 
 };
 //[12,45,2,76,9]

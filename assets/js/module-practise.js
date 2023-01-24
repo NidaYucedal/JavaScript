@@ -11,7 +11,7 @@ console.log(nSortAsc(arr));
 console.log("şakir".localeCompare("ali"));
 //tarayicinin diline gore hareket ederr
 //sakir aliden buyuk 1 doner
-const arrNames=["ali","zeynep","şakir","ssevgi","temel"];
+const arrNames=["ali","zeynep","şakir","sevgi","temel"];
 
 console.log(sSortAsc(arrNames));
 console.log(sSortDesc(arrNames));
