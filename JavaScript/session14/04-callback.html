@@ -15,10 +15,22 @@
         }, 10);
       };*/
 
-      
+      function sayHello(cbMessage){
+        setTimeout(()=>{
+            cbMessage("Hello Javascript");
+        },5000)
+      }
 
-      console.log("sayilarin toplami");
-      const total = sum(12, 45);
+      function cbMessage(msg){
+        console.log(msg);
+      }
+
+
+      console.log("Hello 1");
+
+      sayHello(cbMessage);
+
+      console.log("Hello 1");
    
 
       
