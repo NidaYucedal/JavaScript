@@ -18,6 +18,14 @@
     <p id="message"></p>
 
     <script>
+      //kullanici tarafinda data saklayabilmek icin HTML5 ile
+//birlikte gelen Storage API kullanilir
+//localStorage => veri kullanici veya app silene kadar saklanir
+//sessionStorage => veri oturum bazlı saklanır.taryici 
+//kapadildiginda veri silinir
+//setItem
+//getItem
+//removeItem
       document.querySelector("#btnSave").addEventListener("click", () => {
         const name = document.querySelector("#txtName").value;
         if (!name) return;
