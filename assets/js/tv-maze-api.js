@@ -1,11 +1,11 @@
 
-const searchShows = (query) => {
+const searchShows = (query, cb) => {
 
     fetch(`https://api.tvmaze.com/search/shows?q=${query}`) //promise
     .then( (resp)=>resp.json())
-     .then((data)=>{
-        return data;
-               
+     .then(function(data){
+        cb(data);
+
     });
 };
 
