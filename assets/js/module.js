@@ -8,5 +8,5 @@ import { showAlert } from "./message"
   //import iceri alma
  document.querySelector("#btn").addEventListener("click",()=>{
 
-    showAlert
+    showAlert();
  })
