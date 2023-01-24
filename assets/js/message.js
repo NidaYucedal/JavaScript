@@ -1,6 +1,6 @@
 const showAlert = () => { 
 
-    alert("Hell")
+    alert("Hello")
 
  }
 
