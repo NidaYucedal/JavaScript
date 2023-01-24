@@ -4,13 +4,19 @@ document.querySelector("#txtSearch").addEventListener("click",(e)=>{
     if(!query) return;
 
     fetch(`https://api.tvmaze.com/search/shows?q=${query}`) //promise
-    .then( function (resp){
-      return resp.json();
+    .then( (resp)=>resp.json())
+     .then((data)=>{
 
-    })
-    .then(function(data){
-        console.log(data)
+        console.log(data);
+
+        data.forEach((item)=>{
+            console.log(item);
+     })
+
     });
+   
+        
+   
 
     //fetch ile endpointe baglandik
     //promise yapisi ile baglanti kuruyoruz (soz veriyorum bu datayi getircem)
