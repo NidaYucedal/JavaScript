@@ -9,4 +9,5 @@ const showAlert = () => {
     confirm("are ypu sure?")
  };
 
- export{showAlert,showConfirm};
+ export default showAlert;
+ export{showConfirm};
