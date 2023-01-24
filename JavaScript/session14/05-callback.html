@@ -8,15 +8,22 @@
   </head>
   <body>
     <script>
-      const sum = (a, b, cb) => {
+      function sum(a, b, cb) {
         setTimeout(() => {
           let total = a + b;
-          cb (total);
+          cb(total);
         }, 1000);
-      };
+      }
 
-      sum(12, 45);
-      console.log(total);
+      function cb(total) {
+        console.log(total);
+      }
+
+      sum(12, 45, cb);
+
+      for (let i = 0; i < 100; i++) {
+        console.log("...");
+      }
     </script>
   </body>
 </html>
