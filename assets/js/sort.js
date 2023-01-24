@@ -15,11 +15,11 @@ const nSortAsc=(arr)=>{
 
 };
 
-const nOSortDesc=(arr)=>{
+const nSortDesc=(arr)=>{
 
     return arr.sort((a,b)=>b-a);
 
     
 }
 
-export{sSortAsc,sSortDesc,nSortAsc,nOSortDesc};
+export{sSortAsc,sSortDesc,nSortAsc,nSortDesc};
