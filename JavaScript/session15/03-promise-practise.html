@@ -14,12 +14,14 @@
         //asenkron degil promise yapilari iclerinde bulunan
         //asenkron kodlardan geri deger dondurme islemini handle etmek icin kullanilir
 
-        return new Promise((resolve, reject) => {
-          setTimeout(() => {
+        return new Promise( (resolve, reject) => {
+          setTimeout( () => {
             const result = confirm(msg);
             resolve(result);
           }, 0);
+
         });
+    }
 
         document.querySelector("#btn").addEventListener("click", () => {
           console.log("onceki kodlar");
@@ -28,7 +30,7 @@
           );
           console.log("sonraki kodlar");
         });
-      };
+      
     </script>
   </body>
 </html>
