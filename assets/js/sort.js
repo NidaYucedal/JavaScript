@@ -11,13 +11,13 @@ const sSortDesc=(arr)=>{
 };
 //[12,45,2,76,9]
 const nSortAsc=(arr)=>{
-    return arr.sort((a,b) => a-b);
+    return [...arr.sort((a,b) => a-b)];
 
 };
 
 const nSortDesc=(arr)=>{
 
-    return arr.sort((a,b) => b-a);
+    return [...arr.sort((a,b) => b-a)];
 
     
 }
