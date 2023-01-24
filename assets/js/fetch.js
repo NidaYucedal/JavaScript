@@ -1,25 +1,28 @@
 import {searchShows } from "./tv-maze-api.js"
 
+ //fetch ile endpointe baglandik
+//promise yapisi ile baglanti kuruyoruz (soz veriyorum bu datayi getircem)
+     
 
 document.querySelector("#txtSearch").addEventListener("input",(e)=>{
 
     const query=e.target.value;
     if(!query) return;
     
-    searchShows(query, function(data){
+    createMovieList(query);
 
+});
+
+const createMovieList= (query) => {
+    searchShows(query, function(data){
         let srtHtml="";
         data.forEach((item)=>{
             srtHtml+=createMovieHtml(item);
-        })
-
+        });
         document.querySelector("#tvShows").innerHTML=srtHtml;
-
     });
-    //fetch ile endpointe baglandik
-    //promise yapisi ile baglanti kuruyoruz (soz veriyorum bu datayi getircem)
-    //   
-});
+
+}
 
 
 const createMovieHtml= (item) => {
