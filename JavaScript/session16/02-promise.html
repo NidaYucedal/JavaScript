@@ -45,16 +45,16 @@
       //Promise Chain
 
       soz1(10)
-        .then((resp) => {
-          console.log(resp);
-          return soz2();
+        .then((resp1) => {
+          console.log(resp1);
+          return soz2(resp1);
         })
-        .then((resp) => {
-          console.log(resp);
-          return soz3();
+        .then((resp2) => {
+          console.log(resp2);
+          return soz3(resp2);
         })
-        .then((resp) => {
-          console.log(resp);
+        .then((resp3) => {
+          console.log(resp3);
         });
     </script>
   </body>
