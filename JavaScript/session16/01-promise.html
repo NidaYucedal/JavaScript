@@ -40,9 +40,27 @@
       //bu sirayi kesin olarak belirlemek icin promise
       //zinciri (Promise Chain) olusturulmalidir
 
-      soz1().then(resp=>console.log(resp)); 
+      /*soz1().then(resp=>console.log(resp)); 
       soz2().then(resp=>console.log(resp)); 
-      soz3().then(resp=>console.log(resp)); 
+      soz3().then(resp=>console.log(resp)); */
+
+      //Promise Chain
+
+      soz1()
+        .then((resp) => {
+          console.log(resp);
+          return soz2();
+        })
+        .then((resp) => {
+          console.log(resp);
+          return soz3();
+        })
+        .then((resp) => {
+          console.log(resp);
+        });
+
+        //zincirden dolayi hepsi sira ile calisir
+        //1. gelmeden ikinci calismaz
     </script>
   </body>
 </html>
