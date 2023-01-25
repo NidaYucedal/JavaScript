@@ -34,6 +34,12 @@
         });
       };
 
+      //eger asenkron fonksiyonlar belli bir sirada calistirilmak
+      //isteniyorsa asagidaki gibi birbirinden bagimsiz cagirilirsa
+      //istenilen sirada cavep almaka tamamen sansa kalir
+      //bu sirayi kesin olarak belirlemek icin promise
+      //zinciri (Promise Chain) olusturulmalidir
+
       soz1().then(resp=>console.log(resp)); 
       soz2().then(resp=>console.log(resp)); 
       soz3().then(resp=>console.log(resp)); 
