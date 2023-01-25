@@ -1,5 +1,52 @@
 body {
-  padding: 0;
+  padding: 1rem;
   margin: 0;
-  background-color: darkorchid;
+  font-family: Aboreto;
+}
+
+.card {
+  background-color: rgb(78, 77, 63);
+  border-radius: 20px;
+  color: rgb(252, 252, 252);
+  display: flex;
+}
+
+.left {
+  flex: 2;
+  background-image: url("../img/5d8uH2QvBeMgCnXkXXgcSH.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.top {
+  font-size: 2rem;
+  background-size: cover;
+  font-weight: 700;
+}
+
+.day {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.bottom {
+  font-size: 3rem;
+  background-size: cover;
+  font-weight: 900;
+}
+
+.weather {
+  font-size: 1rem;
+}
+
+.fa-solid fa-location-dot {
+  padding: 1rem;
+}
+
+.right {
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
