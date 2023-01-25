@@ -10,7 +10,6 @@
     <button id="btn">Click</button>
 
     <script>
-      //deger alip gonderme
       const soz1 = (num) => {
         return new Promise((resolve, reject) => {
           setTimeout(() => {
@@ -25,7 +24,6 @@
             const result = num + 100;
             resolve(result);
           }, 3500);
-          //cevap sureleri farklı olursa calisma sirasi degisir
         });
       };
 
@@ -38,33 +36,19 @@
         });
       };
 
-      /*soz1().then(resp=>console.log(resp)); 
-      soz2().then(resp=>console.log(resp)); 
-      soz3().then(resp=>console.log(resp)); */
+      const init = async () => {
+        console.log("onceki islemler");
+        const resp1 = await soz1(30);
+        console.log(resp1);
+        const resp2 = await soz2(resp1);
+        console.log(resp2);
+        const resp3 = await soz3(resp2);
+        console.log(resp3);
 
-      //Promise Chain
+        console.log("sonraki islemler");
+      };
 
-      console.log("onceki islemler")
-      soz1(10)
-        .then((resp1) => {
-          console.log(resp1);
-          return soz2(resp1);
-        })
-        .then((resp2) => {
-          console.log(resp2);
-          return soz3(resp2);
-        })
-        .then((resp3) => {
-          console.log(resp3);
-        });
-
-        //pes pese calismasi gereken asenkron islemler icin kullanilir
-
-        console.log("sonraki islemler")
-
-        //onceki islemler calisti 
-        //sonra asenkron yapilari gordu ayirdi onlari
-        //sonraki islemler calisti daha sonra promise chanin calisti
+      init();
     </script>
   </body>
 </html>
