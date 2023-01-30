@@ -8,7 +8,6 @@
   </head>
   <body>
     <script>
-        
       for (var i = 0; i < 3; i++) {
         setTimeout(() => console.log(i), 1);
       }
@@ -17,6 +16,21 @@
         setTimeout(() => console.log(i), 1);
       }
 
+      //output
+      // 3 3 3 0 1 2
+
+      //Javascript'deki olay kuyruğundan dolayı,
+      //setTimeout callback fonksiyonu, döngü uygulandıktan
+      //sonra çağrılır. i değişkeni, ilk döngü sırasında var
+      //anahtar kelimesi ile tanımlandığından, bu değişken globaldir.
+      //Döngü boyunca, ++ unary operatörünü kullanarak,
+      // i'nin değerini her seferinde 1 arttırdık.
+      //İlk örnekte, setTimeout callback fonksiyonu çağrıldığı zaman, i'nin değeri 3'e eşitti.
+
+      //İkinci döngüde, i değişkeni let anahtar kelimesi
+      //kullanılarak tanımlandı: let (ve const) ile tanımlanan
+      //değişkenler "block-scope"dur (block {} arasındaki herhangi bir şeydir).
+      // Her bir tekrarda, i yeni değere sahip olacak ve her değer döngü içinde "scoped" olacak.
     </script>
   </body>
 </html>
