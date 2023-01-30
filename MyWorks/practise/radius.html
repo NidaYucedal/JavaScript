@@ -19,9 +19,14 @@
       console.log(shape.diameter());
       console.log(shape.perimeter());
 
-      //output 
+      //output
       //20 NaN
-      
+
+      //diameter sıradan bir fonksiyonken, perimeter'in arrow fonksiyon olduğuna dikkat edin.
+
+      //Arrow fonksiyonlarda, this anahtar kelimesi, sıradan fonksiyonların aksine, kendi sardığı mevcut scope'u referans alır. Bu demektir ki, perimeter'i çağırdığımız zaman, shape objesini değil, kendi sardığı scope'u referans alıyor (örneğin window).
+
+      //Bu objede, radius değeri olmadığından undefined döndürüyor.
     </script>
   </body>
 </html>
