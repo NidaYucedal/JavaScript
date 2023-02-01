@@ -1,39 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <script>
-
-        class Chameleon{
-            static colorChange(newColor){
-
-                this.newColor=newColor;
-                return this.newColor;
-            }
-
-
-            constructor({newColor="green"}={}){
-                this.newColor=newColor;
-            }
+      class Chameleon {
+        static colorChange(newColor) {
+          this.newColor = newColor;
+          return this.newColor;
         }
 
-        const freddie=new Chameleon({newColor:"purple"});
-        console.log(freddie.colorChange("orange"));
+        constructor({ newColor = "green" } = {}) {
+          this.newColor = newColor;
+        }
+      }
 
-        //colorChange fonksiyonu statiktir. Statik methodlar, 
-        //sadece oluşturuldukları kurucuda var olmak için 
-        //tasarlanmıştır ve herhangi bir "children"a 
-        //aktarılamaz. freddie, "child" olduğundan, 
-        //fonksiyon aktarılmadı ve freddie üzerinden 
-        //erişilebilir değil: TypeError hatası fırlatılır.
+      const freddie = new Chameleon({ newColor: "purple" });
+      console.log(freddie.colorChange("orange"));
 
-
+      //colorChange fonksiyonu statiktir. Statik methodlar,
+      //sadece oluşturuldukları kurucuda var olmak için
+      //tasarlanmıştır ve herhangi bir "children"a
+      //aktarılamaz. freddie, "child" olduğundan,
+      //fonksiyon aktarılmadı ve freddie üzerinden
+      //erişilebilir değil: TypeError hatası fırlatılır.
     </script>
-</body>
+  </body>
 </html>
