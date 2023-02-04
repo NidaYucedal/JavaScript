@@ -1,43 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
+  </head>
+  <body>
     <script>
-        function Person(firstName, lastName){
-            this.firstName =firstName;
-            this.lastName =lastName;
-        }
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+      }
 
-        const lydia= new Person("Lydia","Hallie");
-        const sarah = Person("Sarah","Smith");
+      const lydia = new Person("Lydia", "Hallie");
+      const sarah = Person("Sarah", "Smith");
 
-        console.log(lydia);
-        console.log(sarah);
+      console.log(lydia);
+      console.log(sarah);
 
-        //output
-        //{firstName: 'Lydia', lastName: 'Hallie'} and undefined
-        //sarah için new anahtar kelimesi kullanmadık. 
-        //new kullandığınız zaman, oluşturduğumuz yeni boş 
-        //nesneyi referans gösterir. Lakin, new'i eklemezseniz, 
-        //global nesne'yi referans gösterir!
-        //this.firstName, "Sarah"'a eşittir ve this.lastName,
-        // "Smith"'e eşittir dedik. Aslında yaptığımız, 
-        //global.firstName = 'Sarah' ve global.lastName = 'Smith' diye tanımlamaydı. 
-        //sarah'ın kendisi undefined olarak kalır.
-
-
-
-
-
-
-
+      //output
+      //{firstName: 'Lydia', lastName: 'Hallie'} and undefined
+      //sarah için new anahtar kelimesi kullanmadık.
+      //new kullandığınız zaman, oluşturduğumuz yeni boş
+      //nesneyi referans gösterir. Lakin, new'i eklemezseniz,
+      //global nesne'yi referans gösterir!
+      //this.firstName, "Sarah"'a eşittir ve this.lastName,
+      // "Smith"'e eşittir dedik. Aslında yaptığımız,
+      //global.firstName = 'Sarah' ve global.lastName = 'Smith' diye tanımlamaydı.
+      //sarah'ın kendisi undefined olarak kalır.
     </script>
-</body>
+  </body>
 </html>
